@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/hydro/share/Butia/build/devel/setup.sh

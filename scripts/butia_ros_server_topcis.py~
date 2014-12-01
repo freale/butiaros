@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import roslib; roslib.load_manifest('Butia')
+from Butia.srv import *
+import rospy
+from pybot import pybot_client
+from std_msgs.msg import String
+
+def butia_ros_server_topics():
+    pub = rospy.Publisher('butiaGray', String)
+    rospy.init_node('butia_ros_server_topics', anonymous=True)
+    r = rospy.Rate(5) # 10hz
+
+    print "Butia ROS Server Ready."
+
+    while not rospy.is_shutdown():
+        a=1
+        robot = pybot_client.robot()
+        value = robot.getGray(a)
+        print "Publishing [robot.getGray(%s):%s]"%(a, value)
+        pub.publish("%s"%value)
+        r.sleep()
+
+if __name__ == "__main__":
+    butia_ros_server_topics()

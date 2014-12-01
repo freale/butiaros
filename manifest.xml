@@ -1,0 +1,17 @@
+<package>
+  <description brief="Butia">
+
+     Butia
+
+  </description>
+  <author>tipoldi</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/Butia</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+
+</package>
+
+
