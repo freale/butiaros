@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import roslib; roslib.load_manifest('Butia')
-from Butia.srv import *
+from butiaros.srv import *
 import rospy
 from pybot import pybot_client
 from std_msgs.msg import String

@@ -11,11 +11,21 @@ add_service_files(
   ButiaSet2MotorSpeed.srv
 )
 
+catkin_python_setup()
+
 generate_messages(
   DEPENDENCIES
   std_msgs
 )
 
-
 catkin_package()
+
+# Shuld be catkin_install_python, but it is not working
+install(
+  PROGRAMS
+	scripts/butia_ros_client.py
+	scripts/butia_ros_server.py
+	scripts/butia_ros_server_topics.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 

@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-import roslib; roslib.load_manifest('Butia')
 
 import sys
 
 import rospy
-from Butia.srv import *
+from butiaros.srv import *
 
 def butia_get_value(cmd,a):
     try:
