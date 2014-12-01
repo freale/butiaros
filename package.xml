@@ -1,0 +1,27 @@
+<package>
+  <name>butiaros</name>
+  <description> 
+    ROS package for the Butiá robot
+  </description>
+  <version>0.0.1</version>
+  <maintainer email="mllofriu@fing.edu.uy">Martin Llofriu</maintainer>
+
+  <author>Andrés Tipoldi</author>
+  <author>Ignacio Escudero</author>
+  <author>Rodrigo Quinta</author>
+  <author>Gonzalo Tejera</author>
+  
+
+  <license>BSD</license>
+  <url type="website">http://www.fing.edu.uy/inco/proyectos/butia/mediawiki/index.php/Integracion_ros_butia</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+
+</package>
